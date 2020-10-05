@@ -3,7 +3,7 @@ public class PopulateStockHoldingDAO {
 
 	private StockHolding[] fillStocksData() {
 		
-		StockHolding[] stocks = new StockHolding[3];
+		StockHolding[] stocks = new StockHolding[5];
 		stocks[0] = new StockHolding();
 		stocks[0].setCompanyName("Amazon");
 		stocks[0].setCurrentSharePrice(4.50f);
@@ -21,6 +21,18 @@ public class PopulateStockHoldingDAO {
 		stocks[2].setCurrentSharePrice(49.51f);
 		stocks[2].setNumberOfShares(210);
 		stocks[2].setPurchaseSharePrice(45.10f);
+		
+		stocks[3] = new ForeignStockHolding();
+		stocks[3].setCompanyName("Nyka");
+		stocks[3].setCurrentSharePrice(49.51f);
+		stocks[3].setNumberOfShares(210);
+		stocks[3].setPurchaseSharePrice(45.10f);
+		
+		stocks[4] = new ForeignStockHolding();
+		stocks[4].setCompanyName("Orange");
+		stocks[4].setCurrentSharePrice(49.51f);
+		stocks[4].setNumberOfShares(210);
+		stocks[4].setPurchaseSharePrice(45.10f);
 		
 		return stocks;
 		
