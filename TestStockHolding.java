@@ -1,9 +1,12 @@
-import java.util.Collections;
+import java.util.Scanner;
 
 public class TestStockHolding {
 
 	public static void main(String[] args) {
 		
+		Scanner scanner = new Scanner(System.in);
+//		System.out.println("How many Stocks User want : ");
+//		int numberOfStocks = scanner.nextInt(); 
 		StockHolding[] stock = new StockHolding[5];
 		ForeignStockHolding[] fsh = new ForeignStockHolding[2];
 		PopulateStockHoldingDAO psh = new PopulateStockHoldingDAO();
