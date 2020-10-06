@@ -9,7 +9,7 @@ public class PopulateStockHoldingDAO {
 		List stocks = new ArrayList<>();
 		StockHolding sh1 = new StockHolding();
 		System.out.println("Enter The Company name        :");
-		String cname = scanner.next();
+		String cname = scanner.nextLine();
 		sh1.setCompanyName(cname);
 		System.out.println("Enter The Current Share price :");
 		Integer cshareprice = scanner.nextInt();
@@ -24,7 +24,8 @@ public class PopulateStockHoldingDAO {
     	
     	StockHolding sh2 = new StockHolding();
 		System.out.println("Enter The Company name        :");
-		String cname1 = scanner.next();
+		scanner.next();
+		String cname1 = scanner.nextLine();
 		sh2.setCompanyName(cname1);
 		System.out.println("Enter The Current Share price :");
 		Integer cshareprice1 = scanner.nextInt();
@@ -40,7 +41,8 @@ public class PopulateStockHoldingDAO {
 		
     	StockHolding sh3 = new StockHolding();
 		System.out.println("Enter The Company name        :");
-		String cname2 = scanner.next();
+		scanner.next();
+		String cname2 = scanner.nextLine();
 		sh3.setCompanyName(cname2);
 		System.out.println("Enter The Current Share price :");
 		Integer cshareprice2 = scanner.nextInt();
@@ -55,7 +57,8 @@ public class PopulateStockHoldingDAO {
 		
     	ForeignStockHolding fsh1 = new ForeignStockHolding();
 		System.out.println("Enter The Company name        :");
-		String cname3 = scanner.next();
+		scanner.next();
+		String cname3 = scanner.nextLine();
 		fsh1.setCompanyName(cname3);
 		System.out.println("Enter The Current Share price :");
 		Integer cshareprice3 = scanner.nextInt();
@@ -73,7 +76,8 @@ public class PopulateStockHoldingDAO {
 		
     	ForeignStockHolding fsh2 = new ForeignStockHolding();
 		System.out.println("Enter The Company name        :");
-		String cname4 = scanner.next();
+		scanner.next();
+		String cname4 = scanner.nextLine();
 		fsh1.setCompanyName(cname4);
 		System.out.println("Enter The Current Share price :");
 		Integer cshareprice4 = scanner.nextInt();
