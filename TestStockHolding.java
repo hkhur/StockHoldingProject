@@ -445,7 +445,7 @@ public class TestStockHolding {
 		
 			
 }
-		System.out.println("Do you want to continue ");
+		System.out.println("Do you want to continue (yes/no)  ");
 		String forkeeprunning  = scanner.next();
 	    
 		}			
