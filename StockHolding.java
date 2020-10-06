@@ -1,27 +1,28 @@
+import java.util.Comparator;
 
-public class StockHolding extends NSObject implements Comparable<StockHolding>{
+public class StockHolding extends NSObject{
 
-	private float purchaseSharePrice;
-	private float currentSharePrice;
-	private int numberOfShares;
+	private Integer purchaseSharePrice;
+	private Integer currentSharePrice;
+	private Integer numberOfShares;
 	private String companyName;
 	
-	public float getPurchaseSharePrice() {
+	public Integer getPurchaseSharePrice() {
 		return purchaseSharePrice;
 	}
-	public void setPurchaseSharePrice(float purchaseSharePrice) {
+	public void setPurchaseSharePrice(Integer purchaseSharePrice) {
 		this.purchaseSharePrice = purchaseSharePrice;
 	}
-	public float getCurrentSharePrice() {
+	public Integer getCurrentSharePrice() {
 		return currentSharePrice;
 	}
-	public void setCurrentSharePrice(float currentSharePrice) {
+	public void setCurrentSharePrice(Integer currentSharePrice) {
 		this.currentSharePrice = currentSharePrice;
 	}
-	public int getNumberOfShares() {
+	public Integer getNumberOfShares() {
 		return numberOfShares;
 	}
-	public void setNumberOfShares(int numberOfShares) {
+	public void setNumberOfShares(Integer numberOfShares) {
 		this.numberOfShares = numberOfShares;
 	}
 	public String getCompanyName() {
@@ -31,16 +32,14 @@ public class StockHolding extends NSObject implements Comparable<StockHolding>{
 		this.companyName = companyName;
 	}
 	
-	public float costInDollars() {
+	public Integer costInDollars() {
 		return purchaseSharePrice*numberOfShares;
 		
 	}
-	public float valueInDollars() {
+	public Integer valueInDollars() {
 		return currentSharePrice*numberOfShares;
 	}
-	@Override
-	public int compareTo(StockHolding o) {
-		return this.getCompanyName().compareTo(((StockHolding)o).getCompanyName());
-	}
+	
+	
 	
 }

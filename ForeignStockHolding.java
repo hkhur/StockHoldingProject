@@ -1,18 +1,22 @@
 
 public class ForeignStockHolding extends StockHolding {
-private float conversionRate;
+private Integer conversionRate;
 private StockHolding stockholding;
 
-public float getConversionRate() {
+public Integer getConversionRate() {
 	 conversionRate = costInDollars()*valueInDollars();
      return conversionRate;
 }
 
-public float costInDollars() {
+public void setConversionRate(Integer conversionRate) {
+	this.conversionRate = conversionRate;
+}
+
+public Integer costInDollars() {
 	return stockholding.getCurrentSharePrice()*stockholding.getNumberOfShares();
 	
 }
-public float valueInDollars() {
+public Integer valueInDollars() {
 	return stockholding.getPurchaseSharePrice()*stockholding.getNumberOfShares();
 }
 
